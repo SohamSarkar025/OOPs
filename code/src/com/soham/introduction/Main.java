@@ -4,14 +4,18 @@ package com.soham.introduction;
 
 public class Main {
 //    //Day[01] ->  3-10-2025
+
 //    public static void main(String[] args) {
+
 //        //soham is a  reference variable
 //        Student soham = new Student();
-//        //update the property of a object
+
+//        //We can update or access the property of a object with dot ( . ) operator.
 //        soham.rollNo=40;
 //        System.out.println(soham.rollNo);
 //    }
 //}
+
 //class Student{
 //    int rollNo; // this variable is instance variable
 //    String name;
@@ -45,11 +49,19 @@ static class Student {
         this.name=name;
         this.marks=marks;
     }
+    //Here we are taking an object of type Student as a parameter
+    Student(Student other){
+        //this refers to the object reference variable who invoke this constructor
+        //other refers to the passing object reference variable
+        this.name=other.name;
+    }
 }
 
     public static void main(String[] args) {
         Student s1 = new Student();
         Student s2 = new Student(5,"Shevanti",69.8f);
+        Student random = new  Student(s2);
+        System.out.println(random.name);
         System.out.println(s2.name);
         System.out.println(s1.name);
     }
