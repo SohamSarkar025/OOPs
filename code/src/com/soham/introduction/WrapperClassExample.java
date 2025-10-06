@@ -3,12 +3,17 @@ package com.soham.introduction;
 public class WrapperClassExample {
 
     public static void main(String[] args) {
-       final A a1 = new A("Soham");
+//       final A a1 = new A("Soham");
        //Cannot reassign a to final  ref variable
         // we just change the
 //       a1 = new A("Other Object");
-        A a2 = new A(a1);
-        System.out.println(a2.name);
+
+
+        //Garbage Collection example
+        A obj;
+        for(int i=0;i<10000000;i++){
+            obj = new A("Random");
+        }
     }
 
 
@@ -19,9 +24,14 @@ public class WrapperClassExample {
 
         A(String name) {
             this.name = name;
+//            System.out.println("Object is Created");
         }
-        A(A other){
-            this.name = other.name;
+
+        //Finalize method is used to do something when the object
+        //is being destroying by the garbage collector
+        @Override
+        protected void finalize() throws  Throwable{
+            System.out.println("Object is destroying....");
         }
     }
 }

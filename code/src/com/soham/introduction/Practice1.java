@@ -14,7 +14,7 @@ public class Practice1 {
 //    Use the new keyword to create two Book objects.
 //    Print the details of both books, including their availability.
 
-    static  class Book{
+    public static  class Book{
         String title;
         String author;
         String isbn;

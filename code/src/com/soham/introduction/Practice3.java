@@ -45,6 +45,7 @@ public class Practice3 {
         System.out.println("Initial balance: "+a1.balance);
         a1.deposit(1000);
         System.out.println(a1.balance);
-        a1.withdrawl(2001);
+        a1.withdrawl(1999);
+        System.out.println(a1.balance);
     }
 }
