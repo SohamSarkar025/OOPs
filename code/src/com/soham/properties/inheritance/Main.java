@@ -17,7 +17,7 @@ public class Main {
 //        Box box3 = new BoxWeight(4.5,41.2,2.3,3.2);
 //        System.out.println(box3.weight);
 
-        //Here box4 is referencing BoxWeight Object, We want to create box object
+        //Here box4 is referencing BoxWeight Type, We want to create box object
         // error beacuase we cannot initialize weight from box object
 //        BoxWeight box4 = new Box(1,2,3);
 

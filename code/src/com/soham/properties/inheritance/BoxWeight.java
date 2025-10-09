@@ -7,6 +7,7 @@ public class BoxWeight extends Box{
         super();
         this.weight=-1;
     }
+
     BoxWeight(double w,double h,double l, double weight){
         //Super Keyword calls the parent class constructor
         //used to initialize values or modify values in parent class
