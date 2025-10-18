@@ -2,10 +2,11 @@ package com.soham.interfaces;
 
 public class NiceCar {
     private Engine engine;
-    private Media player = new Player();
+    private Media player;
 
     NiceCar(){
         this.engine=new PetrolEngine();
+        this.player=new Player();
     }
 
     public void upgradeEngine() {

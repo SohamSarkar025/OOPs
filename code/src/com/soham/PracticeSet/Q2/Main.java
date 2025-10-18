@@ -13,11 +13,11 @@ package com.soham.PracticeSet.Q2;
 //that handles the creation of a new Customer object and returns its reference.
 //(This demonstrates controlled object creation, a common design pattern).
 
-import static com.soham.PracticeSet.Q2.Customer.createAcc;
+//import static com.soham.PracticeSet.Q2.Customer.createAcc;
 
 public class Main {
     public static void main(String[] args) {
-        Customer cus1 = createAcc("Soham",1000);
+        Customer cus1 = Customer.createAcc("Soham",1000);
         cus1.getinfo();
         cus1.withdrawl(100);
         cus1.getinfo();

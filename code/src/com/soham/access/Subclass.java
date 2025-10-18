@@ -6,7 +6,7 @@ public class Subclass extends  A{
     }
 
     public static void main(String[] args) {
-        A obj = new Subclass(40,"Soham");
+        A obj = new A(40,"Soham");
         int n=obj.num;
     }
 }

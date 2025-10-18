@@ -4,7 +4,7 @@ public class WrapperClassExample {
 
     public static void main(String[] args) {
 //       final A a1 = new A("Soham");
-       //Cannot reassign a to final  ref variable
+       //Cannot re-assign a to final  ref variable
         // we just change the
 //       a1 = new A("Other Object");
 

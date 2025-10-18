@@ -58,7 +58,8 @@ static class Student {
 }
 
     public static void main(String[] args) {
-        Student s1 = new Student();
+        Student s1= new Student();
+        System.out.println(s1);
         Student s2 = new Student(5,"Shevanti",69.8f);
         Student random = new  Student(s2);
         System.out.println(random.name);
